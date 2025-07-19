@@ -84,3 +84,30 @@ elif not name.isalpha():
 
 else:
     print(f"Your username {name} is valid")
+
+
+
+
+
+
+
+EXAMPLE:
+#EXCRESICE- string functions
+#enter username no longer than 12 chars
+#cant have spaces
+#no digits
+
+
+name = input("Enter your username: ")
+
+if len(name) > 12:
+    print("Your username is invalid, too long")
+
+elif not name.find(" ") == -1:
+    print("Your username is invalid, has spaces")
+
+elif not name.isalpha():
+    print("Your username is invalid, cant have numbers")
+
+else:
+    print(f"Your username {name} is valid")
