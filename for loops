@@ -1,0 +1,35 @@
+#LECT 8- for loops
+
+for x in range(1,11):
+    print(x) #1,2,3,...11
+print("\n")
+
+
+
+for x in reversed(range(1,11)):
+    print(x) #10,9,...1
+
+print("HAPPY NEW YEAR!")
+print("\n")
+
+
+
+for x in range(1,11,2):
+    print(x) #1,3,5,...9
+print("\n")
+
+
+
+
+
+credit = "1234-5678-9102-3456"
+#You're using for x in credit: — here, x is each character, not an index.
+# So credit[x] tries to access credit["1"], credit["2"], etc., which causes an error.
+for x in credit:
+    if x == '-':
+        continue
+        #break
+
+    print(x)
+
+print("\n")
