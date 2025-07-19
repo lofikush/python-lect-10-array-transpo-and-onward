@@ -1,0 +1,51 @@
+example 1:
+#LECT 7- while loops
+
+name = input("What is your name? ")
+
+while name =="":
+    print("You didn't enter a name")
+    name = input("What is your name? ")
+
+else:
+    print("Hello " + name)
+
+
+example 2:
+#LECT 7- while loops
+
+age = int(input("What is your age? "))
+
+while age < 0:
+    print("age cant be neg")
+    age = int(input("What is your age? "))
+
+else:
+    print("Hello you are", age, "thats cool")
+
+
+
+example 3:
+#LECT 7- while loops
+
+food = input("Whats ur fav food (q to quit) ")
+
+while not food == 'q':
+    print("you like",food)
+    food = input("Whats ur fav food (q to quit) ")
+
+print("bye")
+
+
+
+
+example 4:
+#LECT 7- while loops
+
+num = int(input("enter a # 1-10:"))
+
+while num < 1 or num > 10:
+    print(num, "is NOT vailid")
+    num = int(input("enter a # 1-10:"))
+
+print("ur num is", num)
