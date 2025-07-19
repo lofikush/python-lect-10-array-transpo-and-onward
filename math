@@ -1,0 +1,76 @@
+#LECTURE 3- math
+
+import numpy as np
+
+friends = 10
+"""
+friends = friends + 1
+friends += 1
+"""
+r = friends % 3
+
+
+print(r)
+
+
+
+
+#LECTURE 3- math
+import numpy as np
+
+x = 3.14
+y = -4
+z = 5
+
+result = round(x)
+print(result)
+
+result = abs(y)
+print(result)\
+
+result = pow(y,3)
+print(result)
+
+result = max(x,y,z)
+print(result)
+
+result = min(x,y,z)
+print(result)
+
+
+
+
+#LECTURE 3- circuim
+import math
+
+r = float(input("Enter the radius: "))
+c = 2*math.pi*r
+print(f"the cir is {round(c,2)}cm")
+
+
+
+
+
+
+#LECTURE 3- area
+import math
+
+r = float(input("Enter the radius: "))
+a = math.pi * pow(r,2)
+print(f"the area is {round(a,2)}cm^2")
+
+
+
+
+#LECTURE 3- a^2 +bb = cc
+import math
+
+a = float(input("Enter the side a: "))
+b = float(input("Enter the side b: "))
+
+c = math.sqrt(pow(a,2) + pow(b,2))
+print(f"the side c is {round(c,2)}cm")
+
+
+
+
