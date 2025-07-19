@@ -1,0 +1,57 @@
+example 1: 
+#LECTURE 5- Logical operators
+
+temp = 25
+raining = False
+
+if temp > 35 or temp < 0 or raining:
+    print("Event will NOT happen")
+else:
+    print("Event will happen")
+
+
+#LECTURE 5- Logical operators
+
+temp = 28
+sunny = False
+
+if temp >= 28 and sunny:
+    print("Its HOT")
+    print("Its SUNNY")
+
+elif temp <=0 and sunny:
+    print("Its COLD")
+    print("Its SUNNY")
+
+elif 0 < temp < 28 and sunny:
+    print("Its WARM")
+    print("Its SUNNY")
+
+if temp >= 28 and not sunny:
+    print("Its HOT")
+    print("Its COULDY")
+
+elif temp <= 0 and not sunny:
+    print("Its COLD")
+    print("Its COULDY")
+
+elif 0 < temp < 28 and not sunny:
+    print("Its WARM")
+    print("Its COULDY")
+
+
+
+
+
+
+
+
+example2;
+#LECTURE 6- conditional expersion
+# X if condition true, else Y
+
+num = 5
+print("pos" if num>0 else "neg")
+
+res = "even" if num%2 == 0 else "odd"
+print(res)
