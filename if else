@@ -1,0 +1,33 @@
+EXAMPLE 1:
+# LECTURE 4 – if else
+import math
+
+age = int(input("Enter your age: "))
+
+if age < 0:
+    print("You aren't born yet")
+elif age >= 100:
+    print("You should be dead")
+elif age >= 18:
+    print("You are old enough")
+else:
+    print("You are not old enough")
+
+
+
+
+
+
+Example 2:
+#LECTURE 4- if else
+
+response = input("do u like food (y/n):")
+
+if response == "":
+    print("you did not enter a value")
+elif response == "y":
+    print("eat smth")
+elif response == "n":
+    print("dont eat")
+else:
+    print("bye")
