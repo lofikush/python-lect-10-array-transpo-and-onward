@@ -1,0 +1,46 @@
+#LECTURE 1- Print, comment, varaibles
+
+import numpy as np
+
+print("I like pizza")
+print ("Its really Good")
+
+#Variables
+first_name = "Kush"
+print(first_name)
+print(f"Hello {first_name}")
+
+food = "Pizza"
+print(f"You like {food}")
+
+
+email = "Kush123@fake.com"
+print(f"youre email is {email}")
+
+
+#intergers
+age = 21
+print(f"You are {age} years old")
+
+quanity = 3
+print(f"You are buying {quanity} beers")
+
+
+
+#floats- contains a decmial
+price = 10.99
+print(f"the price is {price} dollars")
+
+
+
+
+#Boolians- True or false
+is_student = True
+print(f"Are you a student?: {is_student}")
+
+
+for_sale = False
+if for_sale:
+    print("Its for sale")
+else:
+    print("Its NOT for sale")
