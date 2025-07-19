@@ -1,0 +1,29 @@
+#LECT 7- while loops
+
+prin,rate,time = 0,0,0
+
+while True :
+    prin = float(input("Enter the prin : "))
+    if prin<0:
+        print("Num cant be less than 0")
+    else:
+        break
+
+while True :
+    rate = float(input("Enter the price of the rate : "))
+    if rate<0:
+        print("Please enter a number greater than 0")
+    else:
+        break
+
+while True:
+    time = float(input("Enter the price of the time : "))
+    if time<0:
+        print("Please enter a number greater than 0")
+    else:
+        break
+
+print(prin, rate, time)
+
+total = prin * pow((1+rate/100),time)
+print(f"balance after {time}year/s: ${total:.2f}")
