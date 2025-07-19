@@ -1,0 +1,25 @@
+#LECT 5- index
+#indexing [start:end:step]
+
+creditNumber = "1234-5678-9012-3456"
+
+print(creditNumber[5:9])
+
+#print last 12 digits
+print(creditNumber[5:])
+
+#print last number
+print(creditNumber[-1])
+#second to last
+print(creditNumber[-2])
+
+#up 2 steps
+print(creditNumber[0::2])
+
+#get last 4 digits
+lastDigits = creditNumber[-4::1] #start from 4th to last, and go up by 1
+print(lastDigits)
+
+#reverse array
+creditNumber =creditNumber[::-1]
+print(creditNumber)
