@@ -1,0 +1,86 @@
+#LECTURE 7- string functions
+
+#length of string
+name = input("What is your name? ")
+res = len(name)
+print(res)
+
+
+name = "  Alice Johnson  "
+
+# strip() - removes leading and trailing whitespace
+clean_name = name.strip()
+print(clean_name)
+
+# lower() - converts to lowercase
+print(clean_name.lower())  # alice johnson
+
+# upper() - converts to uppercase
+print(clean_name.upper())  # ALICE JOHNSON
+
+# capitalize() - capitalizes first letter only
+print(clean_name.capitalize())  # Alice johnson
+
+# title() - capitalizes first letter of each word
+print(clean_name.title())  # Alice Johnson
+
+# replace() - replaces parts of the string
+print(clean_name.replace("Alice", "Bob"))  # Bob Johnson
+
+print("hi", clean_name)  # Bob Johnson
+
+# find() - finds first occurrence of substring
+first_space = clean_name.find(" ")
+print(first_space)  # index of first space
+
+# rfind() - finds last occurrence of substring
+last_space = clean_name.rfind(" ")
+print(last_space)  # index of last space
+
+# count() - counts how many times a substring appears
+print(clean_name.count("o"))  # counts how many o's
+
+# isalpha() - checks if all characters are letters (no spaces)
+print(clean_name.isalpha())  # False (because of space)
+
+# isnumeric() - checks if all characters are digits
+print("12345".isnumeric())  # True
+
+# isalnum() - checks if all characters are letters or numbers
+print("abc123".isalnum())  # True
+
+# startswith() - checks if string starts with something
+print(clean_name.startswith("Alice"))  # True
+
+# endswith() - checks if string ends with something
+print(clean_name.endswith("Johnson"))  # True
+
+# split() - splits string into list by spaces (default)
+words = clean_name.split("o")
+print(words)  # ['Alice', 'Johnson']
+
+# join() - joins list into string with separator
+joined = "-".join(words)
+print(joined)  # Alice-Johnson
+
+
+EXAMPLE:
+#EXCRESICE- string functions
+#enter username no longer than 12 chars
+#cant have spaces
+#no digits
+
+
+name = input("Enter your username: ")
+
+if len(name) > 12:
+    print("Your username is invalid, too long")
+
+elif not name.find(" ") == -1:
+    print("Your username is invalid, has spaces")
+
+elif not name.isalpha():
+    print("Your username is invalid, cant have numbers")
+
+else:
+    print(f"Your username {name} is valid")
