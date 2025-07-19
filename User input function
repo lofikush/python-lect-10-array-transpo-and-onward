@@ -1,0 +1,14 @@
+#LECTURE 3- User input
+import numpy as np
+
+
+#input() = A function that's prompts users to enter data, returns data entered as a string
+
+name = input("Whats your name?")
+age = int(input("How old are you?"))
+age = age +1
+
+print(f"Hello {name}")
+print(f"You are {age} next year")
+
+print(type(age))
