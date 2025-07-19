@@ -1,0 +1,20 @@
+#LECT 6- Format specifiers
+
+p1 = 3000000.14159
+p2 = -987.65
+p3 = 12.34
+
+print(f"price 1 is ${p1:.2f}") #price 1 is $3.14
+
+
+
+print(f"price 1 is ${p1:10}") #price 1 is $3.14 #price 1 is $   3.14159
+
+print(f"price 2 is ${p2:010}") #price 2 is $-000987.65
+
+print(f"price 3 is ${p3:<10}") #price 3 is $12.34_______
+print(f"price 3 is ${p3:>10}") #price 3 is $     12.34
+print(f"price 3 is ${p3:+}") #price 3 is $  12.34---
+
+
+print(f"price 1 is ${p1:+,.2f}") #price 1 is $+3,000,000.14
