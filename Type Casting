@@ -1,0 +1,20 @@
+#LECTURE 2- TypeCasting
+
+import numpy as np
+
+name = "kush sachdeva"
+age = 21
+gpa = 3.5
+is_student = True
+
+print("gpa type:", type(gpa)) #print the type of variable
+gpa = int(gpa)
+print(gpa) #always round down
+print("gpa type AFTER:", type(gpa), "\n\n") #print the type of variable
+
+age = str(age)
+print(age)
+print("age type AFTER:", type(age), "\n\n") #print the type of variable
+
+name = bool(name)
+print(name) #always returns true UNLESS STRING is empty
