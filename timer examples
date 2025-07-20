@@ -1,0 +1,39 @@
+#countdown example
+import time
+
+myTime = int(input("enter time in seconds to wait before printing hello world"))
+
+for x in range(0,myTime):
+    print(x)
+    time.sleep(1)
+
+print("Hello World\n\n")
+
+#count down in reverse
+myTime = int(input("enter time in seconds to wait before printing hello world"))
+
+for x in range(myTime,0,-1):    
+    print(x)
+    time.sleep(1)
+
+print("Hello World\n\n")
+
+
+
+example 2:
+#countdown example
+import time
+
+
+
+#count down in reverse
+myTime = int(input("enter time in seconds to wait before printing hello world"))
+
+for x in range(myTime,0,-1):
+    secs = x % 60
+    mins = int(x/60) %60
+    hours = int(x/3600)
+    print(f"{hours:02}:{mins:02}:{secs:02}")
+    time.sleep(1)
+
+print("Hello World\n\n")
