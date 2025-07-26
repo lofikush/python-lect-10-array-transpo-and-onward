@@ -1,0 +1,107 @@
+LISTS:
+#LECTURE 10-LISTS SETS AND TUPLES
+#COLLECTIONS - think like stuctures in C, can hold mutiple values
+#1. List = [] ordered and changeable, duplicates OK
+#2. Set = {} unordered and immutable, but add/remove OK. NO duplicates
+#3. Tuple = () ordered and unchangeable. Duplicates OK. FASTER
+
+num = 9
+
+fruitsL = ["apple", "orange", "banana", "cherry"]
+
+#print(fruitsL[0]) #print apple
+#print(fruitsL[0:3:2]) #print apple
+
+#for x in fruitsL:
+#    print(x) #print list
+
+#print(dir(fruitsL))
+#print(help(fruitsL))
+
+#print(len(fruitsL)) #print length of list
+#print("apple" in fruitsL) #print true or false
+
+#fruitsL[0]= "pinnapple"
+#print(fruitsL)
+
+#fruitsL.append("orange") #add smth to end of listr
+#for x in fruitsL:
+#    print(x) #print list
+
+#fruitsL.remove("orange") #remove
+
+#fruitsL.insert(1,"Test") # insert smth at spefic index
+
+#fruitsL.sort() #Sort alphabetically
+
+#fruitsL.reverse() #reserve list, NOT revsere alpha but how it was listed first
+
+#fruitsL.clear() # removce
+
+#print(fruitsL.index("apple")) #print index at which apple is found
+
+#print(fruitsL.count("apple")) #print the ammount of times apple is found in list
+for x in fruitsL:
+    print(x) #print list
+
+
+
+
+
+
+
+
+
+SETS:
+#LECTURE 10-LISTS SETS AND TUPLES
+#COLLECTIONS - think like stuctures in C, can hold mutiple values
+#1. List = [] ordered and changeable, duplicates OK
+#2. Set = {} unordered and immutable, but add/remove OK. NO duplicates
+#3. Tuple = () ordered and unchangeable. Duplicates OK. FASTER
+
+num = 9
+
+fruitsS = {"apple", "orange", "banana", "cherry"}
+
+#print(fruitsS) #PRINT is random..for some reason. Cant print fruitsS[0] bs so.
+
+#fruitsS.add("nut") #add to set, rem its random
+#fruitsS.remove("orange") #remove in set
+#fruitsS.pop() #removes first element, but its random lol
+#fruitsS.clear() # clears set
+
+#you CAN add duplicates in ur list, but it deletes the copies and works with just one of it
+
+print(fruitsS)
+
+
+
+
+
+
+
+
+Tuples:
+#LECTURE 10-LISTS SETS AND TUPLES
+#COLLECTIONS - think like stuctures in C, can hold mutiple values
+#1. List = [] ordered and changeable, duplicates OK
+#2. Set = {} unordered and immutable, but add/remove OK. NO duplicates
+#3. Tuple = () ordered and unchangeable. Duplicates OK. FASTER
+
+num = 9
+
+fruitsT = ("apple", "orange", "banana", "cherry")
+
+#print(len(fruitsT))
+#print("apple" in fruitsT) #true or false
+
+#print(fruitsT.index("apple"))
+
+#print(fruitsT.count("apple"))
+
+#print(fruitsT) #PRINT is ordered
+
+#fruitsT.insert(2,"apple"), rem tupoles are unchanable, cant do this!!
+
+for x in fruitsT:
+    print(x)
