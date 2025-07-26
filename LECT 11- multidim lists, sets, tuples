@@ -1,0 +1,51 @@
+EXAMPLE 1:
+#LECTURE 10.2- 2/3-D LISTS SETS AND TUPLES
+#examples
+#1. List = [] ordered and changeable, duplicates OK
+#2. Set = {} unordered and immutable, but add/remove OK. NO duplicates
+#3. Tuple = () ordered and unchangeable. Duplicates OK. FASTER
+
+fruits =        ['apple','orange','banana', "coconut"]
+vegetables =    ['celery','carrots','potatoes']
+meats =         ['chicken','fish','turkey']
+
+groceries = [fruits,vegetables,meats]
+
+#print(groceries[0][1])
+
+#groceries2 = [['apple','orange','banana', "coconut"], ['celery','carrots','potatoes'], ['chicken','fish','turkey'] ]
+#print(groceries2)
+
+#for collection in groceries:
+#    print(collection) #print every row
+
+for collection in groceries:
+    for food in collection: #nested loop
+        print(food, end = ", ")
+    print()
+
+
+
+
+example2:
+#LECTURE 11- 2/3-D LISTS SETS AND TUPLES
+#phone
+#1. List = [] ordered and changeable, duplicates OK
+#2. Set = {} unordered and immutable, but add/remove OK. NO duplicates
+#3. Tuple = () ordered and unchangeable (cant add or remove once created). Duplicates OK. FASTER
+
+numPad = ((1,2,3),
+          (4,5,6),
+          (7,8,9),
+          ("*",0,"#"))
+
+
+for row in numPad:
+    for num in row:
+        print(num, end=' ')
+    print()
+
+    # 1 2 3
+    # 4 5 6
+    # 7 8 9
+    # * 0 #
