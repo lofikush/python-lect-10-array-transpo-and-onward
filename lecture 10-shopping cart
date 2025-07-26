@@ -1,0 +1,31 @@
+#LECTURE 10-LISTS SETS AND TUPLES
+#shopping cart
+#1. List = [] ordered and changeable, duplicates OK
+#2. Set = {} unordered and immutable, but add/remove OK. NO duplicates
+#3. Tuple = () ordered and unchangeable. Duplicates OK. FASTER
+
+
+
+foodsL = []
+pricesL = []
+total = 0
+
+while True:
+    food = input("What food do you want to buy? (q to quit): ")
+    if food.lower() == "q": #user can eneter q or Q
+        break
+    else:
+        foodsL.append(food)
+        price = float(input(f"What is the price of {food}($): "))
+        pricesL.append(price)
+
+
+print("-----YOUR CART------")
+for food in foodsL:
+    print(food, end = ", ")
+
+print() #print new line
+
+for price in pricesL:
+    total = total + price
+print(f"Total: {total}")
