@@ -1,0 +1,30 @@
+#LECTURE 13- Dictionaries
+# dict- a colltiopn of {key:value} pairs. Ordered and changable, no duplicates
+
+capitals = {"USA":"Washington DC",
+            "UK":"London",
+            "China": "Beijing",}
+
+#print(capitals.get("USA")) #get the value of the key-USA. python dont find keys, do a if esle for that
+
+#capitals.update({"Germany":"Berlin"}) #Add to dict
+#capitals.update({"USA":"TEST"}) #change in dict
+
+#capitals.pop("China") #remove key china and its associtaed value
+
+#capitals.popitem() #remove the latest item added to dict
+
+#capitals.clear()
+
+#keys = capitals.keys() #return all the keys in dict, which returns a list techincally
+
+#for key in keys:
+#    print(key)
+
+
+#values = capitals.values() #Returns a object that remables a list
+
+items = capitals.items() #returns a 2-D list of tuples
+print(items)
+for key, value in capitals.items():
+    print(f"{key}, {value}")
