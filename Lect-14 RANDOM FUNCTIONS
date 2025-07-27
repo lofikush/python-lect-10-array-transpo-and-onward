@@ -1,0 +1,60 @@
+#LECTURE 14- Generate random numbers
+
+import random
+
+low = 1
+high = 100
+opt = ("Rock", "Paper", "Scissor")
+cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+
+#number = random.randint(low,high) #return a num btw 1-100
+#number = random.random() #return a random floating number btw 0-1
+#options = random.choice(opt) #pick a random choice in a array
+#random.shuffle(cards) #Shuffle my elemnts in crads
+
+
+print(cards)
+
+
+
+
+
+example 2:
+#LECTURE 14- Generate random numbers
+
+import random
+
+low = 1
+high = 100
+answer = random.randint(low,high) #return a num btw 1-100
+guesses = 0
+isRunning = True
+
+print("Welcome to the Guess Game!")
+print(f"I am thinking of a number between {low} and {high}")
+
+while isRunning:
+    guess = input("Take a guess: ")
+    if guess.isdigit():
+        guess = int(guess)
+        guesses += 1
+        if guess < low or guess > high:
+            print("Sorry, your guess is too low or too high. That still counts as a guess!")
+        elif guess<answer:
+            print(f"Your guess is too low. Try again")
+        elif guess>answer:
+            print(f"Your guess is too high. Try again")
+        else:
+            print(f"Correct! You guessed it in {guesses} guesses. the answer is {answer} which is {guess}")
+            isRunning = False
+
+    else:
+        print("Sorry, that's not a number. Try again.")
+
+
+
+
+
+
+
+
