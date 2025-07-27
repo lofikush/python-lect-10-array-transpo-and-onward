@@ -1,0 +1,55 @@
+#LECTURE 14- Generate random numbers
+
+import random
+isRunning = True
+choices = ("rock", "paper", "scissor")
+rounds = 0
+playerPoints = 0
+computerPoints = 0
+
+while playerPoints !=2 and computerPoints !=2:
+
+    player = input("Please choose: Rock, Paper, Scissor?").lower()
+    computer = random.choice(choices)
+
+    if player in choices:
+        #tie
+        if player == computer:
+            rounds += 1
+            print(f"-----ROUND {rounds} RESULTS-----")
+            print(f"It's a tie! player picked {player}, computer picked {computer}")
+        #Only cases to win
+        elif player == "rock" and computer == "scissor":
+            rounds += 1
+            playerPoints += 1
+            print(f"-----ROUND {rounds} RESULTS-----")
+            print(f"you WIN! player picked {player}, computer picked {computer}")
+        elif player == "paper" and computer == "rock":
+            rounds += 1
+            playerPoints += 1
+            print(f"-----ROUND {rounds} RESULTS-----")
+            print(f"you WIN! player picked {player}, computer picked {computer}")
+        elif player == "scissor" and computer == "paper":
+            rounds += 1
+            playerPoints += 1
+            print(f"-----ROUND {rounds} RESULTS-----")
+            print(f"you WIN! player picked {player}, computer picked {computer}")
+        #Case to lose
+        else:
+            rounds += 1
+            computerPoints += 1
+            print(f"-----ROUND {rounds} RESULTS-----")
+            print(f"you LOSE... player picked {player}, computer picked {computer}")
+
+    elif player =="q":
+        break
+    else:
+        print("Not a valid choice")
+
+# Game over message (only if someone reached 2 points)
+if playerPoints >= 2 or computerPoints >= 2:
+    print("\n----- GAME OVER -----")
+    if playerPoints > computerPoints:
+        print(f"You won the game! {playerPoints}-{computerPoints}")
+    else:
+        print(f"Computer won the game. {playerPoints}-{computerPoints}")
